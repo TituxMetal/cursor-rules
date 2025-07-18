@@ -1,0 +1,66 @@
+---
+description:
+  APPLY comprehensive git workflow for solo development WHEN planning features, implementing code,
+  committing changes, or managing development workflow to ensure consistent branching, conventional
+  commits, and clean linear history
+globs: '**'
+alwaysApply: true
+---
+
+Status Checking:
+
+- Check `git status` before any git guidance
+- Understand current branch and working directory state
+- Adapt workflow guidance based on actual git situation
+
+Change Analysis:
+
+- Analyze actual changes before suggesting branch or commit types
+- Question user's framing if it doesn't match change type
+- Be consistent between branch names and commit types
+- Suggest better categorization with reasoning
+- Explain why specific type is more appropriate
+
+Branch Management:
+
+- Never commit directly to `main` branch
+- If on `main` with changes, suggest feature branch first
+- Create feature branch from `main`
+- Use `feature/short-descriptive-name` format
+- Use `fix/short-descriptive-name` for bug fixes
+- Use `docs/short-descriptive-name` for documentation
+- Use `chore/short-descriptive-name` for maintenance
+- Use kebab-case for branch names
+
+Commit Process:
+
+- Check staged changes before suggesting commits
+- Verify files need staging before suggesting `git add`
+- Adapt commit guidance based on staging area state
+- Use `type(scope): description` format
+- Start with lowercase description
+- Use `feat` for new features
+- Use `fix` for bug fixes
+- Use `docs` for documentation changes
+- Use `chore` for maintenance tasks
+- Use `refactor` for code restructuring
+- Use `style` for formatting changes
+- Use `test` for test additions
+- Keep description under 50 characters
+- Add body for complex changes
+- Use present tense verbs
+- Omit scope if obvious
+- Use `!` for breaking changes
+
+Merge Process:
+
+- Work in small atomic commits
+- Push feature branches for backup
+- Rebase feature onto latest `main`
+- Fast-forward merge to `main`
+
+Cleanup:
+
+- Delete feature branch after merge
+- Keep `main` always deployable
+- Force-push after rebase if needed
