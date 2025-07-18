@@ -1,0 +1,18 @@
+---
+description:
+  APPLY GitHub Flow branching strategy for solo development WHEN planning features, implementing
+  code, or managing development workflow to ensure clean linear history with rebase merges
+globs: '**'
+alwaysApply: true
+---
+
+- Create feature branch from `main`
+- Use `feature/short-descriptive-name` format
+- Work in small atomic commits
+- Rebase feature onto latest `main`
+- Fast-forward merge to `main`
+- Delete feature branch after merge
+- Keep `main` always deployable
+- Use kebab-case for branch names
+- Push feature branches for backup
+- Force-push after rebase if needed
