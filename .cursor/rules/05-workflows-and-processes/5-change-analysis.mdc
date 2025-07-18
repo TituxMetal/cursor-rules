@@ -1,0 +1,18 @@
+---
+description:
+  APPLY intelligent change analysis WHEN suggesting branch names or commit types to ensure
+  consistent categorization between branch naming and commit types based on actual code changes
+globs: '**'
+alwaysApply: true
+---
+
+- Analyze actual changes before suggesting branch or commit types
+- Question user's framing if it doesn't match change type
+- Be consistent between branch names and commit types
+- Use `feat/` + `feat:` for new functionality
+- Use `fix/` + `fix:` for bug fixes
+- Use `docs/` + `docs:` for documentation changes
+- Use `chore/` + `chore:` for maintenance tasks
+- Use `refactor/` + `refactor:` for code restructuring
+- Suggest better categorization with reasoning
+- Explain why specific type is more appropriate
