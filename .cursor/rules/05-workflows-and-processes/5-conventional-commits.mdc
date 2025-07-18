@@ -7,6 +7,9 @@ globs: '**'
 alwaysApply: true
 ---
 
+- Check staged changes before suggesting commits
+- Verify files need staging before suggesting `git add`
+- Adapt commit guidance based on staging area state
 - Use `type(scope): description` format
 - Start with lowercase description
 - Use `feat` for new features

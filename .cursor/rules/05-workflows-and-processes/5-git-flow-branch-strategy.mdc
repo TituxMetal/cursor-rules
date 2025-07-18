@@ -6,6 +6,11 @@ globs: '**'
 alwaysApply: true
 ---
 
+- Check `git status` before any git guidance
+- Understand current branch and working directory state
+- Adapt workflow guidance based on actual git situation
+- Never commit directly to `main` branch
+- If on `main` with changes, suggest feature branch first
 - Create feature branch from `main`
 - Use `feature/short-descriptive-name` format
 - Work in small atomic commits
