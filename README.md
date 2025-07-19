@@ -71,8 +71,36 @@ This rules library provides a solid foundation for:
 - **Programming Languages:** TypeScript best practices, naming, typing
 - **Frameworks/Libraries:** React, MobX, NestJS, React Router, Tailwind CSS
 - **Tools/Config:** Yarn usage, package installation policies
-- **Workflows:** Bug finding, process documentation
+- **Workflows:** Comprehensive git workflow (branching, commits, issues, PRs), bug finding
 - **Quality Assurance:** Testing standards for unit, integration, frontend, backend
+
+## Featured Rule: Comprehensive Git Workflow
+
+The `5-git-workflow-complete.mdc` rule provides end-to-end git workflow guidance for solo
+development:
+
+### **Structured Workflow Phases:**
+
+- **Status Checking:** Always check git state before providing guidance
+- **Change Analysis:** Intelligent categorization of changes (feat/fix/docs/chore)
+- **Complex Workflow Planning:** Uses sequential thinking for multi-step processes
+- **Branch Management:** Enforces feature branching, never commit directly to main
+- **Commit Process:** Conventional commits with proper staging verification
+- **Merge Process:** Rebase-based workflow for clean linear history
+- **Pull Request Process:** Guidelines for complex features and major changes
+- **Issues Management:** GitHub issue integration with proper linking
+- **GitHub Integration:** Direct MCP tool usage for creating issues and PRs
+- **Cleanup:** Automated branch deletion and repository maintenance
+
+### **Key Features:**
+
+- **Tool Integration:** Uses GitHub MCP tools and sequential thinking when available
+- **State-Aware:** Checks actual git status before suggesting actions
+- **Intelligent Analysis:** Questions user assumptions and suggests better categorization
+- **Complete Lifecycle:** From planning with issues to final cleanup
+
+This rule ensures consistent, professional git workflows while leveraging available tools for
+maximum efficiency.
 
 ## Updating or Adding Rules
 
